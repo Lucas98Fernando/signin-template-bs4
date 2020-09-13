@@ -45,9 +45,31 @@
 
                                         <div class="custom-control custom-checkbox mb-3">
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Li e concordo com os <a href="#">termos de uso</a></label>
+                                            <label class="custom-control-label" for="customCheck1">Li e concordo com os <a href="#" data-toggle="modal" data-target="#exampleModalLong">termos de uso</a>.</label>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Termos de Uso</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <!-- Body Modal-->
+                                                        <div class="modal-body text-justify">
+                                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                        </div>
+                                                        <!-- Footer Modal-->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary btn-general" data-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
-                        
                                         <button class="btn btn-lg btn-primary btn-block btn-general text-uppercase font-weight-bold mb-2" type="submit">Cadastrar</button>
                                     </form>
                                     <div class="text-center">
