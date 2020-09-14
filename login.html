@@ -38,6 +38,7 @@
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                             <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
                                         </div>
+
                                         <button class="btn btn-lg btn-primary btn-block btn-general text-uppercase font-weight-bold mb-2" type="submit" onclick="return validateForm()">Entrar</button>
                                         <div class="text-center">
                                             <a class="small" href="recoverPassword.html">Esqueceu sua senha?</a>
@@ -62,19 +63,27 @@
                 </div>
             </div>
         </div>
-        <!-- Validação de formulário
+        <!-- Form validation-->
             <script type="text/javascript">
                 function validateForm() {
                     var email = form.email.value;
-                    var senha = form.password.value;
+                    var password = form.password.value;
 
                     if (email === '') {
                         alert('Preencha o campo de e-mail');
-                        form.email.focus;
+                        form.email.focus();
+                        return false;
+                    } if (password === '') {
+                        alert('Preencha o campo de senha');
+                        form.password.focus();
+                        return false;
+                    } if (form.email.value.indexOf("@") == -1 || form.email.valueOf.indexOf(".") == -1 || form.email.value == "" || form.email.value == null) {
+                        alert("Por favor, informe um e-mail válido.");
+                        form.email.focus();
                         return false;
                     }
                 }
             </script>
-        -->
+        
     </body>
 </html>
