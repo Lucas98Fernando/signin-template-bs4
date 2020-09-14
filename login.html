@@ -23,14 +23,14 @@
                             <div class="row">
                                 <div class="col-md-9 col-lg-8 mx-auto">
                                     <h3 class="login-heading mb-4 text-center">Bem-vindo!</h3>
-                                    <form>
+                                    <form name="form">
                                         <div class="form-label-group">
-                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" maxlength="40" required autofocus>
                                             <label for="inputEmail">E-mail</label>
                                         </div>
                         
                                         <div class="form-label-group">
-                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" maxlength="25" required>
                                             <label for="inputPassword">Senha</label>
                                         </div>
                         
@@ -38,7 +38,7 @@
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                             <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
                                         </div>
-                                        <button class="btn btn-lg btn-primary btn-block btn-general text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
+                                        <button class="btn btn-lg btn-primary btn-block btn-general text-uppercase font-weight-bold mb-2" type="submit" onclick="return validateForm()">Entrar</button>
                                         <div class="text-center">
                                             <a class="small" href="recoverPassword.html">Esqueceu sua senha?</a>
                                         </div>
@@ -62,5 +62,19 @@
                 </div>
             </div>
         </div>
+        <!-- Validação de formulário
+            <script type="text/javascript">
+                function validateForm() {
+                    var email = form.email.value;
+                    var senha = form.password.value;
+
+                    if (email === '') {
+                        alert('Preencha o campo de e-mail');
+                        form.email.focus;
+                        return false;
+                    }
+                }
+            </script>
+        -->
     </body>
 </html>
