@@ -22,25 +22,33 @@
                             <div class="row">
                                 <div class="col-md-9 col-lg-8 mx-auto">
                                     <h3 class="login-heading mb-4 text-center">Cadastre-se</h3>
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <div class="form-label-group">
                                             <input type="text" id="inputName" class="form-control" placeholder="Nome Completo" maxlength="45" required autofocus>
                                             <label for="inputName">Nome Completo</label>
+                                            <div class="valid-feedback">Nome válido!</div>
+                                            <div class="invalid-feedback">Por favor, informe o seu nome.</div>
                                         </div>
 
                                         <div class="form-label-group">
                                             <input type="email" id="inputEmail" class="form-control" placeholder="Email" maxlength="40" required>
                                             <label for="inputEmail">E-mail</label>
+                                            <div class="valid-feedback">E-mail válido!</div>
+                                            <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
                                         </div>
                         
                                         <div class="form-label-group">
                                             <input type="password" id="inputPassword" class="form-control" placeholder="Password" maxlength="25" required>
                                             <label for="inputPassword">Senha</label>
+                                            <div class="valid-feedback">Senha ok</div>
+                                            <div class="invalid-feedback">Por favor, informe a sua senha.</div>
                                         </div>
 
                                         <div class="form-label-group">
                                             <input type="password" id="inputPasswordConfirm" class="form-control" placeholder="PasswordConfirm" maxlength="25" required>
                                             <label for="inputPasswordConfirm">Confirmar Senha</label>
+                                            <div class="valid-feedback">Senha confirmada</div>
+                                            <div class="invalid-feedback">Por favor, confirme a sua senha.</div>
                                         </div>
 
                                         <div class="custom-control custom-checkbox mb-3">
@@ -83,5 +91,7 @@
                 </div>
             </div>
         </div>
+        <!-- Path to the form validation file -->
+        <script src="./js/validation.js"></script>
     </body>
 </html>

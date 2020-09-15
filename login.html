@@ -23,15 +23,19 @@
                             <div class="row">
                                 <div class="col-md-9 col-lg-8 mx-auto">
                                     <h3 class="login-heading mb-4 text-center">Bem-vindo!</h3>
-                                    <form name="form">
+                                    <form name="form" class="needs-validation" novalidate>
                                         <div class="form-label-group">
                                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" maxlength="40" required autofocus>
                                             <label for="inputEmail">E-mail</label>
+                                            <div class="valid-feedback"></div>
+                                            <div class="invalid-feedback">Informe um e-mail válido para prosseguir.</div>
                                         </div>
                         
                                         <div class="form-label-group">
                                             <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" maxlength="25" required>
                                             <label for="inputPassword">Senha</label>
+                                            <div class="valid-feedback"></div>
+                                            <div class="invalid-feedback">Informe um e-mail válido para prosseguir.</div>
                                         </div>
                         
                                         <div class="custom-control custom-checkbox mb-3">
@@ -63,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <!-- Form validation-->
+        <!-- Form validation-
             <script type="text/javascript">
                 function validateForm() {
                     var email = form.email.value;
@@ -84,6 +88,8 @@
                     }
                 }
             </script>
-        
+        -->
+        <!-- Path to the form validation file -->
+        <script src="./js/validation.js"></script>
     </body>
 </html>
